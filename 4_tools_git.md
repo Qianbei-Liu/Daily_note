@@ -30,7 +30,7 @@ github主页
 
 个人主页
 
-## git
+## git 
 
 + 分布式
 + 版本控制
@@ -69,8 +69,31 @@ github主页
   + git checkout  -b dev 新建dev的并切换到该分支
   + 分支切换 git checkout < branchname >
   + 合并分支 git merge < branchname >  fast merge
+  
 + 解决冲突
   + 手动解决 git --graph --pretty=oneline 可以看到冲突的地方
+  
 + git stach 出现紧急事件的时候暂存
+
 + ![image-20220320211900772](C:\Users\lsazy\AppData\Roaming\Typora\typora-user-images\image-20220320211900772.png)
-+ 
+
+  ### git 应用
+
+  ~~~c++
+  当你在 GitHub 创建一个代码仓库后，需要將其与你的本地仓库关联起来。
+  在本地创建一个新仓库并关联：
+  cd /path/to/repo
+  touch README.md
+  git init
+  git add README.md
+  git commit -m "First commit"
+  git remote add origin git@github.com:zhaqiang/learngit.git
+  git push -u origin master
+  
+  关联一个已存在的仓库:
+  cd /path/to/repo
+  git remote add origin git@github.com:zhaqiang/learngit.git
+  git push -u origin master
+  ~~~
+
+  
